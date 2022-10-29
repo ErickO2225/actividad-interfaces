@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/b375149b8e.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+</div>
+<body onload="listar();">
+    <body style="background-color:rgb(146, 179, 211);"></body>
+    <header>
+        <div class="titulo">
+            <h1>DotOffice</h1>
+        </div>
+       </header>
+    </div>
+</div>
+       <div class="subtitu">
+        <h1>Registro de usuario </h1>
+    </div>
+    <main class="dere">
+       
+    
+ <div container class="main">
+<form class="row needs-validation tipo formulario" novalidate>
+ <form action="" class="formulario" id="formulario">
+
+ <div class="sexo position-relative">
+    <label for="select" class="formulario__lable"><i class="fa fa-building" aria-hidden="true"></i> Categoría:</label>
+     <select class="form-select formulario__input" id="categoria" required aria-label="Default select example">
+     <option value="">Selecciona una Categoría</option>
+     <option value="Individual">Individual</option>
+     <option value="Corporativo">Corporativo</option>
+      </select>
+     <div class="invalid-tooltip">
+    <div>
+      </div>
+    <br>
+      </div>
+    
+    
+    <div class="formulario__grupo position-relative"  id="grupo__nombre">
+      <label for="nombre"  class="formulario__lable"><i class="fa fa-user" aria-hidden="true"></i> Nombres</label>
+      <div class="formulario__grupo-input">
+         <input type="text" class="formulario__input" id="name" placeholder="Erick Alberto" required>
+        <div class="valid-tooltip">
+      </div>
+   <div class="invalid-tooltip">
+    (campo obligatorio)
+     </div>
+      </div>
+      <br>
+        </div>
+    
+     <div class="formulario__grupo position-relative"  id="grupo__apellido">
+       <label for="apellido" class="formulario__lable"><i class="fa fa-user" aria-hidden="true"></i> Apellidos</label>
+        <div class="formulario__grupo-input">
+        <input type="text" class="formulario__input" id="lastname" placeholder="Orellana Ticas" required>
+          <div class="valid-tooltip">
+         </div>
+          <div class="invalid-tooltip">
+            (campo obligatorio)
+          </div>
+          </div>
+          <br>
+         </div>
+    
+         <div class="formulario__grupo position-relative"  id="grupo__email">
+           <label for="email" class="formulario__lable"><i class="fa fa-envelope" aria-hidden="true"></i> Email </label>
+           <div class="formulario__grupo-input">
+           <input type="email" class="formulario__input" id="email" placeholder="erickore@gmail.com" required>
+           <br>
+            <div class="valid-tooltip">
+           </div>
+           <div class="invalid-tooltip">
+            (campo obligatorio)
+            </div>
+            </div>
+            <br>
+            </div> 
+       <div class="formulario__grupo position-relative"  id="grupo__contraseña1">
+     <label for="contraseña1" class="formulario__lable"><i class="fa fa-lock" aria-hidden="true"></i> Contraseña del ususario</label>
+     <div class="formulario__grupo-input">
+      <input type="password" class="formulario__input" id="passwd" placeholder="********" required>
+       <div class="valid-tooltip">
+      </div>
+     <div class="invalid-tooltip">
+        (campo obligatorio)
+
+        
+     </div>
+     </div>
+     <br>
+    </div> <br>
+    
+    
+    <div class="formulario__grupo position-relative">
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="info" required>
+    <label class="form-check-label" for="info">
+    Deseo recibir información
+    de esta pagina
+     </label>
+     <div class="valid-tooltip">
+     </div>
+      <div class="invalid-tooltip">
+      
+      </div>
+  </div>
+  <br>
+     </div>
+
+
+ <div class="formulario__grupo position-relative">
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="terminos" required>
+     <label class="form-check-label" for="terminos">
+      Acepto los términos de servicios
+    </label>
+    <div class="valid-tooltip">
+     </div>
+     <div class="invalid-tooltip">
+      
+   </div>
+ </div>
+   </div>
+
+   <br>
+
+
+                      <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <a href="tabla.html"><button class="btn formulario__btn" onclick="guadar_localStorage();listar();">Registrar</button>
+                        </div></a>
+
+            </form>
+
+
+        </div>
+        
+    </main>
+
+
+
+
+
+
+    <script src="js/animacion.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+    <script>
+
+        
+(function () {
+  'use strict'
+
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>
